@@ -6,11 +6,11 @@ Esse repositório é voltado para o útlimo trabalho de **Introdução a desenvo
 
 **Aiprovider**
 
-## Tema 
+## Tema
 
-Marketing para a empresa Aiprovider. Divulgar e ser uma plataforma de acesso e contrato dos serviços da empresa.
+Marketing para a empresa Aiprovider. Divulgar os servilos da empresa e ser uma plataforma de acesso e contrato dos serviços da empresa.
 
-## Objetivo 
+## Objetivo
 
 Fornecer serviços de _ChatBot_ e IA em geral, inicialmente para serviços de telecomunicações.
 ___
