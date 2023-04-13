@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
 
 * {
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Poppins', 'sans-serif';
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+body {
+  background-color: white;
+  min-width: 100vh;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+	align-items: center;
 }
