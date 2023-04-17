@@ -1,22 +1,135 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
 
 * {
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Poppins', 'sans-serif';
+  box-sizing: border-box;
 }
 
 body {
-  background-color: white;
-  min-width: 100vh;
-  overflow-x: hidden;
+  background-color: #f9f9f9;
 }
 
-header {
+button {
+  border: 0px;
+  padding: 0px;
+  font-family: inherit;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 64px;
+  background: #4169e1;
+  color: #f9f9f9;
+  font-family: 'Poppins';
+}
+
+.navbar-overlay {
+  position: fixed;
+  z-index: 2px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #808080;
+  visibility: hidden;
+  opacity: 0px;
+  transition: 0.5s;
+}
+
+/* Abre o overlay e coloca para visivel */
+body.aberto .navbar-overlay {
+  visibility: visible;
+}
+
+.navbar-burger {
   position: absolute;
   top: 0px;
-  left: 0;
-  width: 100%;
-  padding: 30px 100px;
-  align-items: center;
+  left: 0px;
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+}
+
+.navbar-title {
+  margin: 0px;
+  font-size: 16px;
+}
+
+.navbar-menu {
+  position: fixed;
+  z-index: 3px;
+  top: 0px;
+  left: 0px;
+  translate: -100% 0;
+  width: 270px;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #4169e1;
+  visibility: hidden;
+  translate: all 0.3s;
+}
+
+a {
+  color: #f9f9f9;
+  font-family: 'Poppins';
+  text-decoration: none;
+}
+
+body.open .navbar-menu {
+  translate: 0 0;
+  visibility: visible;
+}
+
+.navbar-menu > button{
+  color: rgba(255,255,255, 0.5);
+  background: transparent;
+  padding: 0 8px;
+  transition: all 0.3s;
+}
+
+.navbar-menu > button.active {
+  color: inherit;
+
+} 
+
+.navbar-menu > button.active:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+  }
+
+  .navbar-overlay {
+    display: none;
+  }
+
+  .navbar-burger {
+    display: none;
+  }
+
+  .navbar-menu {
+    position: static;
+    translate: 0 0;
+    width: auto;
+    background: transparent;
+    flex-direction: row;
+    visibility: visible;
+  }
 }
