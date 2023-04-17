@@ -10,14 +10,34 @@
     <!-- Alterar o título e o nome do arquivo/pasta do trabalho -->
     <title>Projeto Final/AI Provider</title>
 
+    <!-- Icones da Material UI -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
-      <nav><a href="pages/pagina1.html">Serviço</a></nav>
-      <nav><a href="pages/pagina2.html">Clientes</a></nav>
-      <nav><a href="pages/pagina3.html">Parceiros</a></nav>
-      <nav><a href="pages/pagina4.html">Contato</a></nav>
-    </header>
+      <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <span class="material-icons">menu</span>
+        </button>
+
+        <h1 class="navbar-title">AiProvider</h1>
+
+        <nav class="navbar-menu">
+          <button type="button" class="active"><a href="pages/pagina1.html" class="goto">Serviços</a></button>
+          <button type="button" class="active"> <a href="pages/pagina2.html" class="goto">Clientes</a> </button>
+          <button type="button" class="active"><a href="pages/pagina3.html" class="goto">Parceiros</a></button>
+          <button type="button" class="active"><a href="pages/pagina4.html" class="goto">Contatos</a></button>
+        </nav>
+      </nav>
+
+      <script type="text/javascript">
+        const toggleMenuOpen = () => document.body.classList.toggle("open");
+      </script>
   </body>
 </html>
