@@ -12,26 +12,28 @@
     <title>Clientes</title>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
-
-      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
-        <span class="material-icons">menu</span>
-      </button>
-
-      <!-- Voltar para home -->
-      <h1 class="navbar-title"><a href="../index.html">AiProvider</a></h1>
-
-      <nav class="navbar-menu">
-        <button type="button" class="active"><a href="pagina1.html" class="goto">Serviços</a></button>
-        <button type="button" class="active"> <a href="pagina2.html" class="goto">Clientes</a> </button>
-        <button type="button" class="active"><a href="pagina3.html" class="goto">Parceiros</a></button>
-        <button type="button" class="active"><a href="pagina4.html" class="goto">Contatos</a></button>
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+  
+        <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+          <span class="material-icons">menu</span>
+        </button>
+  
+        <!-- Voltar para home -->
+        <h1 class="navbar-title"><a href="../index.html">AiProvider</a></h1>
+  
+        <nav class="navbar-menu">
+          <button type="button" class="active"><a href="pagina1.html" class="goto">Serviços</a></button>
+          <button type="button" class="active"> <a href="pagina2.html" class="goto">Clientes</a> </button>
+          <button type="button" class="active"><a href="pagina3.html" class="goto">Parceiros</a></button>
+          <button type="button" class="active"><a href="pagina4.html" class="goto">Contatos</a></button>
+        </nav>
       </nav>
-    </nav>
-
-    <script type="text/javascript">
-      const toggleMenuOpen = () => document.body.classList.toggle("open");
-    </script>
+  
+      <script type="text/javascript">
+        const toggleMenuOpen = () => document.body.classList.toggle("open");
+      </script>
+    </div>
   </body>
 </html>
