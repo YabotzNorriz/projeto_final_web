@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: black;
 }
 
 button {
@@ -26,9 +26,9 @@ button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 64px;
-  background: #4169e1;
-  color: #f9f9f9;
+  height: 50%;
+  background: #fff;
+  color: #000;
   font-family: 'Poppins';
 }
 
@@ -62,7 +62,9 @@ body.aberto .navbar-overlay {
 }
 
 .navbar-title {
-  margin: 0px;
+  margin-top: 14%;
+  margin-right: 6%;
+  margin-left: 6%;
   font-size: 16px;
 }
 
@@ -78,18 +80,18 @@ body.aberto .navbar-overlay {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: #4169e1;
+  background: #fff;
   visibility: hidden;
   translate: all 0.3s;
 }
 
 a {
-  color: #f9f9f9;
+  color: #000;
   font-family: 'Poppins';
   text-decoration: none;
 }
 
-body.open .navbar-menu {
+body.open.navbar-menu {
   translate: 0 0;
   visibility: visible;
 }
@@ -103,7 +105,6 @@ body.open .navbar-menu {
 
 .navbar-menu > button.active {
   color: inherit;
-
 } 
 
 .navbar-menu > button.active:hover {

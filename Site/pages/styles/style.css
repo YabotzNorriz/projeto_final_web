@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: black;
 }
 
 button {
@@ -27,8 +27,8 @@ button {
   justify-content: center;
   width: 100%;
   height: 64px;
-  background: #4169e1;
-  color: #f9f9f9;
+  background: #fff;
+  color: #000;
   font-family: 'Poppins';
 }
 
@@ -46,7 +46,7 @@ button {
 }
 
 /* Abre o overlay e coloca para visivel */
-body.aberto .navbar-overlay {
+body.aberto.navbar-overlay {
   visibility: visible;
 }
 
@@ -66,6 +66,11 @@ body.aberto .navbar-overlay {
   font-size: 16px;
 }
 
+.navbar-title-logo {
+  width: 15%;
+  height: 15%;
+}
+
 .navbar-menu {
   position: fixed;
   z-index: 3px;
@@ -78,18 +83,18 @@ body.aberto .navbar-overlay {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background: #4169e1;
+  background: #fff;
   visibility: hidden;
   translate: all 0.3s;
 }
 
 a {
-  color: #f9f9f9;
+  color: #000;
   font-family: 'Poppins';
   text-decoration: none;
 }
 
-body.open .navbar-menu {
+body.open.navbar-menu {
   translate: 0 0;
   visibility: visible;
 }
@@ -103,7 +108,6 @@ body.open .navbar-menu {
 
 .navbar-menu > button.active {
   color: inherit;
-
 } 
 
 .navbar-menu > button.active:hover {
@@ -132,4 +136,5 @@ body.open .navbar-menu {
     flex-direction: row;
     visibility: visible;
   }
+
 }
