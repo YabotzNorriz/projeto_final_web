@@ -1,0 +1,6 @@
+{
+    "livePreview.defaultPreviewPath": "/Site/pages/pagina1.html",
+    "vscode-edge-devtools.userDataDir": "",
+    "livePreview.customExternalBrowser": "Firefox",
+    "liveServer.settings.CustomBrowser": "firefox"
+}
