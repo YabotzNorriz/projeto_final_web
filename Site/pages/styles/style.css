@@ -174,3 +174,9 @@ body.open.navbar-menu {
   }
 
 }
+
+#formulario-contato {
+  margin: auto;
+  padding: 100px;
+  text-align: center;
+}
