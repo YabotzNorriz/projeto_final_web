@@ -11,15 +11,15 @@ body {
   box-sizing: border-box;
   background-color: #020202;
   color: #ffffff;
-  display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+}
+
+#boldpink {
+  color: #FF00B1;
 }
 
 p {
-  grid-template-columns: fit-content(3fr);
-  grid-template-rows: fit-content(50vh);
-  grid-column-start: 1;
-  grid-column-end: 2;
+  margin: auto;
+  padding: 150px 0px;
   width: 838px;
   height: 65px;
   top: 151px;
