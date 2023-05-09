@@ -9,15 +9,10 @@
     />
     <title>AI Provider</title>
     <!-- Icones da Material UI -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <!-- Não apagar esse div, fazer tudo dentro dele -->
-    <div class="container">
       <nav class="navbar">
         <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
 
@@ -25,14 +20,13 @@
           <span class="material-icons">menu</span>
         </button>
 
-
         <nav class="navbar-menu">
           <button type="button" class="active"><a href="pages/pagina1.html" class="goto">Serviços</a></button>
           <button type="button" class="active"> <a href="pages/pagina2.html" class="goto">Sobre</a> </button>
           <button type="button" class="active"><a href="pages/pagina3.html" class="goto">Contato</a></button>
           <button type="button" class="active"><a href="pages/pagina4.html" class="goto">Cases</a></button>
           <button type="button" class="active"><a href="pages/pagina4.html" class="goto">Entrar</a></button>
-          <img id="button_cadastrar" src="img/Cadastrar.png" alt="Button Cadastrar">  
+          <img id="button-cadastrar" src="img/Cadastrar.png" alt="Button Cadastrar">  
         </nav>
 
         <h1 class="navbar-title"><img src="/Site/pages/img/ai provider logo@2x 1.png" alt="AiProvider_Logo"></h1>
@@ -43,7 +37,5 @@
       <script type="text/javascript">
         const toggleMenuOpen = () => document.body.classList.toggle("open");
       </script>
-    </div>
-
   </body>
 </html>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300,400;500,600&display=swap');
 
 * {
   box-sizing: border-box;
@@ -64,15 +64,16 @@ button {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: #808080;
+  background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0px;
   transition: 0.5s;
 }
 
 /* Abre o overlay e coloca para visivel */
-body.aberto.navbar-overlay {
+body.open .navbar-overlay {
   visibility: visible;
+  opacity: 1;
 }
 
 .navbar-burger {
@@ -89,15 +90,17 @@ body.aberto.navbar-overlay {
 .navbar-title {
   margin: 0px;
   font-size: 16px;
+  visibility: hidden;
+  text-align: center;
 }
 
 .navbar-title-logo {
-  width: 15%;
-  height: 15%;
+  width: 30%;
+  height: 30%;
+  visibility: visible;
 }
 
 .navbar-menu {
-  border-radius: 25px;
   position: fixed;
   z-index: 3px;
   top: 0px;
@@ -107,6 +110,7 @@ body.aberto.navbar-overlay {
   height: 100%;
   padding: 20px;
   display: flex;
+  gap: 8px;
   flex-direction: column;
   align-items: flex-start;
   background: #fff;
@@ -120,13 +124,13 @@ a {
   text-decoration: none;
 }
 
-body.open.navbar-menu {
+body.open .navbar-menu {
   translate: 0 0;
   visibility: visible;
 }
 
-.navbar-menu > button{
-  color: rgba(255,255,255, 0.5);
+.navbar-menu > button {
+  color: rgba(255,255,255, 0.25);
   background: transparent;
   padding: 0 8px;
   transition: all 0.3s;
@@ -173,7 +177,20 @@ body.open.navbar-menu {
     visibility: visible;
   }
 
+  .navbar-title-logo {
+    visibility: visible;
+    width: 20%;
+    height: 20%;
+  }
+
+  .navbar-title {
+    margin: 0px;
+    font-size: 16px;
+    visibility: hidden;
+    text-align: left;
+  }
 }
+
 /* Contato, Forms */
 #formulario-contato {
   margin: auto;
