@@ -1,39 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
-    <link rel="stylesheet" href="style/style.css">
-    <!-- Link dos icones da Material UI -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-    <title>Parceiros</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
 
-      <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
-        <span class="material-icons">menu</span>
-      </button>
-      
-      <h1 class="navbar-title"><a href="../index.html"><img class="navbar-title-logo" src="img/ai provider logo@2x 1.png" alt="AiProvider_Logo_Small"></a></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <link rel="stylesheet" href="style/style.css">
+  <!-- Link dos icones da Material UI -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <title>Parceiros</title>
+  <style type="text/css">
+    .cabecalho {
+      text-align: center;
+      margin-top: 84px;
+      margin-bottom: 20px;
+    }
 
-      <nav class="navbar-menu">
-        <button type="button" class="active"><a href="pagina1.html" class="goto">Serviços</a></button>
-        <button type="button" class="active"><a href="pagina2.html" class="goto">Sobre</a> </button>
-        <button type="button" class="active"><a href="pagina3.html" class="goto">Contato</a></button>
-        <button type="button" class="active"><a href="pagina4.html" class="goto">Parceiros</a></button>
-        <button type="button" class="active"><a href="pagina5.html" class="goto">Entrar</a></button>
-        <img id="button-cadastrar" src="img/Cadastrar.png" alt="Button Cadastrar">  
-      </nav>
+    .secaoParceiros {
+      margin-left: 48px;
+      margin-right: 48px;
+      margin-bottom: 20px;
+    }
+
+    .infoParceiros {
+      text-align: justify;
+      font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-size: 20px;
+      width: 100%;
+      height: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+
+    .linksParceiros {
+      font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .textoRodape {
+      text-align: center;
+      font-family: 'Poppins', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-size: 20px;
+      width: 50%;
+      height: 100%;
+      padding-top: 0px;
+      padding-bottom: 0px;
+    } 
+
+    /* --- tabela --- */
+
+    table { 
+      text-align: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .tabela {
+      font-size: 1.6rem;
+      width: 35%;
+      height: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      color: #FF00B1;
+      margin-bottom: 20px;
+    }
+
+    .linha {
+      color: #000000;
+      background-color: #ffffff;
+    }
+
+    .lista {
+      margin: 0px;
+      font-size: 1.6rem;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-overlay" onclick="toggleMenuOpen()"></div>
+
+    <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
+      <span class="material-icons">menu</span>
+    </button>
+
+    <h1 class="navbar-title"><a href="../index.html"><img class="navbar-title-logo" src="img/ai provider logo@2x 1.png"
+          alt="AiProvider_Logo_Small"></a></h1>
+
+    <nav class="navbar-menu">
+      <button type="button" class="active"><a href="pagina1.html" class="goto">Serviços</a></button>
+      <button type="button" class="active"><a href="pagina2.html" class="goto">Sobre</a> </button>
+      <button type="button" class="active"><a href="pagina3.html" class="goto">Contato</a></button>
+      <button type="button" class="active"><a href="pagina4.html" class="goto">Parceiros</a></button>
+      <button type="button" class="active"><a href="pagina5.html" class="goto">Entrar</a></button>
+      <img id="button-cadastrar" src="img/Cadastrar.png" alt="Button Cadastrar">
     </nav>
+  </nav>
 
-    <script type="text/javascript">
-      const toggleMenuOpen = () => document.body.classList.toggle("open");
-    </script>
-  </body>
+  <header class="cabecalho">
+    <h1 style="color: #FF00B1">PARCEIROS</h1>
+  </header>
+
+  <section class="secaoParceiros">
+    <p class="infoParceiros">
+      A AiProvider já trabalha com alguns negócios de diferentes rumos, atuando de várias maneiras. Valorizamos muito
+      nossos parceiros, tendo em vista que eles são essenciais para a melhora do nosso serviço, contribuindo fortemente
+      para o nosso crescimento em diversos aspectos. Na tabela abaixo temos alguns exemplos das empresas que fazem parte
+      da família AIProvider:
+    </p>
+  </section>
+
+  <section class="tabela">
+    <table border="2" bgcolor="#000000">
+      <tr>
+        <td width="35" align="center"><b>#</b></td>
+        <td> <b>Empresas Parceiras</b> </td>
+      </tr>
+
+      <tr class="linha">
+        <td align="center"> <b>1</b> </td>
+        <td><a class="linksParceiros" href="https://www.gnatelecom.com.br/" target="_blank">GNA Telecom</a></td>
+
+      <tr class="linha">
+        <td align="center"> <b>2</b> </td>
+        <td><a class="linksParceiros" href="https://linktr.ee/nexastart" target="_blank">NexaStart</a></td>
+
+      <tr class="linha">
+        <td align="center"> <b>3</b> </td>
+        <td><a class="linksParceiros" href="" target="_blank">Choose Food</a></td>
+
+      <tr class="linha">
+        <td align="center"> <b>4</b> </td>
+        <td><a class="linksParceiros" href="http://www.cubyplay.com.br/" target="_blank">Cuby</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    <p class="textoRodape">Estamos sempre em busca de novas parcerias para expandir nossas ofertas e melhorar ainda mais a experiência do
+      nosso cliente, portanto, venha fazer parte também da família AIProvider. <a href="" style="color: #FF00B1">Cadastre-se</a> já!
+    </p>
+  </footer>
+
+  <script type="text/javascript">
+    const toggleMenuOpen = () => document.body.classList.toggle("open");
+  </script>
+</body>
+
 </html>
