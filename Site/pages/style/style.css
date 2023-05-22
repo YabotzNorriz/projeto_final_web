@@ -191,28 +191,3 @@ body.open .navbar-menu {
     text-align: left;
   }
 }
-
-/* Contato, Forms */
-#formulario-contato {
-  margin: auto;
-  padding: 80px;
-  text-align: center;
-  }
-
-input {
-  margin: 3px;
-  width: 50%;
-  border: 2px solid grey;
-  border-radius: 9px;
-  outline: none;
-}
-
-#negocio {
-  height: 150px;
-  margin: 3px;
-  width: 50%;
-  border: 2px solid grey;
-  border-radius: 9px;
-  outline: none;
-}
-
