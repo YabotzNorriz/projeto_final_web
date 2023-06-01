@@ -7,10 +7,74 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <!-- Link dos icones da Material UI -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <title>Serviços</title>
+    <style>
+
+      * {
+        font-family: 'Montserrat';
+      }
+
+      .wrapper{
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+      }
+
+      .grid-container{
+        margin: 20px auto;
+        display: grid;
+        grid-column-gap: 30px;
+        width: 60vw;
+        height: 450px;
+      }
+
+      .left{
+        text-align: center;
+        background-color: #1a1a1a;
+        grid-column: 1;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .right{
+        text-align: center;
+        background-color: #1a1a1a;
+        grid-column: 2;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .text-title {
+        font-family: 'Montserrat';
+        font-size: 20px;
+      }
+
+      .goto-contato {
+        color: white;
+        border-radius: 4px;
+        font-family: 'Montserrat';
+        border: 1px dashed #fff; 
+      }
+
+      .pricing {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        
+      } 
+
+      #boldpink {
+        color: #ff00b1;
+      }
+    </style>
   </head>
   <body>
       <nav class="navbar">
@@ -24,18 +88,40 @@
   
         <nav class="navbar-menu">
           <button type="button" class="active"><a href="servicos.html" class="goto">Serviços</a></button>
-          <button type="button" class="active"><a href="sobre.html" class="goto">Sobre</a> </button>
           <button type="button" class="active"><a href="contato.html" class="goto">Contato</a></button>
           <button type="button" class="active"><a href="parceiros.html" class="goto">Parceiros</a></button>
           <button type="button" class="active"><a href="entrar.html" class="goto">Entrar</a></button>
           <button type="button" class="active"><a href="cadastro.html" class="goto"><img id="button-cadastrar" src="img/Cadastrar.png" alt="Button Cadastrar"></a></button>  
         </nav>
       </nav>
-  
+      
+      <br><br><br><br>
+      <div class="grid-container">
+        <div class="left">
+          <br><br><br><br><br><br><br><br>
+          <p class="pricing"><b id="boldpink">R$</b> 360,55 por mês</p>
+          <br><br><br><br><br><br><br><br>
+            <h2 class="text-title">Contato ao provedor</h2>
+              <br><br>
+            <div class="main-text">
+              <a class="goto-contato" href="contato.html">Contate-nos sobre sua escolha</a>
+            </div>
+        </div>
+        
+        <div class="right">
+          <br><br><br><br><br><br><br><br>
+          <p class="pricing"><b id="boldpink">R$</b> SUA ESCOLHA</p>
+          <br><br><br><br><br><br><br><br>
+            <h2 class="text-title">Conectado ao provedor</h2>
+            <br><br>
+            <div class="main-text">
+               <a class="goto-contato" href="contato.html">Contate-nos sobre seu preço</a>
+            </div>
+        </div>
+      </div>    
+
       <script type="text/javascript">
         const toggleMenuOpen = () => document.body.classList.toggle("open");
       </script>
-      
-    <p><b id="boldpink">Inteligência Artificial</b> <b>para uma experiência de atendimento personalizada, eficaz e humanizada.</b></p> 
-    </body>
+  </body>
 </html>

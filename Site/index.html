@@ -8,18 +8,87 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
     />
     <title>AI Provider</title>
-    <link rel="stylesheet" href="style2.css" />
-  </head>
-  <body>
-      <img class="aiprovider" src="pages/img/ai provider logo@2x 1.png">
-      <br> <br>
-      <p>
-        <button type="button" class="active"><a href="servicos.html" class="goto">Saiba mais sobre a empresa</a> </button>
-      </p>
-      <br><br>
+    <link rel="stylesheet" href="style/style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,800&display=swap');
 
-      <img class="glitch-head" src="pages/img/GlitchHead04 2.png" alt="GlitchHead04">
+      * {
+        box-sizing: border-box;
+
+        margin: 0;
+        border: 0;
+      }
+
+      body {
+        background-color: rgb(28, 26, 26);
+      }
+
+      .head {
+        background-color: #fff;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+      }
+      
+      .btn-sus {
+        text-align: center;
+      }
+
+      .btn-goto {
+        background-color: transparent;
+        font-family: "Poppins";
+        font-size: large;
+        border-radius: 8px;
+        border: 2px solid #FF00b1;
+        padding: 5px;
+        transition-duration: 0.4s;
+      }
+
+      .btn-goto:hover {
+        background-color: #FF00b1;
+        color: #fff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #FF00b1;
+        transition-duration: 0.4s;
+      }
+      
+      a:hover {
+        color: #fff;
+      }
+
+      .glitch-head {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+      }
 
       
-    </body>
+      .aiprovider {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+      }
+ 
+    </style>
+  </head>
+  <body>
+      <div class="head">
+        <img class="aiprovider" src="pages/img/ai provider logo@2x 1.png">
+        <br> <br>
+        <div class="btn-sus">
+          <button type="button" class="btn-goto"><a href="pages/servicos.html" class="goto">Saiba mais sobre a empresa</a></button>
+        </div>
+        <br><br>
+      </div>
+      
+      <figure id="figure-head">
+        <img class="glitch-head" src="pages/img/GlitchHead04 2.png" alt="GlitchHead04">
+      </figure>
+
+  </body>
 </html>
