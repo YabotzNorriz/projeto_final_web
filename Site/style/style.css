@@ -3,136 +3,64 @@
 
 * {
   box-sizing: border-box;
+
+  margin: 0;
+  border: 0;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(28, 26, 26);
 }
 
-button {
-  border: 0px;
-  padding: 0px;
-  font-family: inherit;
-  background: transparent;
-  color: inherit;
-  cursor: pointer;
+.head {
+  background-color: #fff;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
-.navbar {
-  position: fixed;
-  z-index: 1px;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50%;
-  background: #fff;
-  color: #000;
-  font-family: 'Poppins';
+.btn-sus {
+  text-align: center;
 }
 
-.navbar-overlay {
-  position: fixed;
-  z-index: 2px;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: #808080;
-  visibility: hidden;
-  opacity: 0px;
-  transition: 0.5s;
+.btn-goto {
+  background-color: transparent;
+  font-family: "Poppins";
+  font-size: large;
+  border-radius: 8px;
+  border: 2px solid #FF00b1;
+  padding: 5px;
+  transition-duration: 0.4s;
 }
 
-/* Abre o overlay e coloca para visivel */
-body.aberto .navbar-overlay {
-  visibility: visible;
-}
-
-.navbar-burger {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  display: grid;
-  place-items: center;
-  width: 64px;
-  height: 64px;
-  padding: 0;
-}
-
-.navbar-title {
-  margin-top: 14%;
-  margin-right: 6%;
-  margin-left: 6%;
-  font-size: 16px;
-}
-
-.navbar-menu {
-  position: fixed;
-  z-index: 3px;
-  top: 0px;
-  left: 0px;
-  translate: -100% 0;
-  width: 270px;
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: #fff;
-  visibility: hidden;
-  translate: all 0.3s;
+.btn-goto:hover {
+  background-color: #FF00b1;
+  color: #fff;
 }
 
 a {
-  color: #000;
-  font-family: 'Poppins';
   text-decoration: none;
+  color: #FF00b1;
+  transition-duration: 0.4s;
 }
 
-body.open.navbar-menu {
-  translate: 0 0;
-  visibility: visible;
+a:hover {
+  color: #fff;
 }
 
-.navbar-menu > button{
-  color: rgba(255,255,255, 0.5);
-  background: transparent;
-  padding: 0 8px;
-  transition: all 0.3s;
-}
-
-.navbar-menu > button.active {
-  color: inherit;
-} 
-
-.navbar-menu > button.active:hover {
-  color: rgba(255, 255, 255, 0.75);
+.glitch-head {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 
-@media only screen and (min-width: 600px) {
-  .navbar {
-    justify-content: space-between;
-    padding: 0 0 0 16px;
-  }
-
-  .navbar-overlay {
-    display: none;
-  }
-
-  .navbar-burger {
-    display: none;
-  }
-
-  .navbar-menu {
-    position: static;
-    translate: 0 0;
-    width: auto;
-    background: transparent;
-    flex-direction: row;
-    visibility: visible;
-  }
+.aiprovider {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  margin-top: 20px;
 }
+ 

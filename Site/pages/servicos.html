@@ -18,10 +18,15 @@
 
       * {
         font-family: 'Montserrat';
+        margin: 0;
+        padding: 0;
+        border: 0;
       }
 
       .wrapper{
-        display: grid;
+        display: flex;
+        align-items: center;
+        text-align: center;
         place-items: center;
         min-height: 100vh;
       }
@@ -29,9 +34,11 @@
       .grid-container{
         margin: 20px auto;
         display: grid;
-        grid-column-gap: 30px;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
         width: 60vw;
-        height: 450px;
+        /* height: 450px; */
       }
 
       .left{
@@ -39,7 +46,6 @@
         background-color: #1a1a1a;
         grid-column: 1;
         border-radius: 25px;
-        margin: 10px;
         padding: 10px;
       }
 
@@ -48,32 +54,65 @@
         background-color: #1a1a1a;
         grid-column: 2;
         border-radius: 25px;
-        margin: 10px;
         padding: 10px;
       }
 
       .text-title {
         font-family: 'Montserrat';
-        font-size: 20px;
+        font-size: 2.3vw;
+      }
+
+      .btn-goto-contato {
+        background-color: transparent;
+        font-family: "Poppins";
+        font-size: large;
+        border-radius: 8px;
+        border: 2px solid #FF00b1;
+        padding: 5px;
+        transition-duration: 0.4s;
+      }
+
+      .btn-goto-contato:hover {
+        background-color: #FF00b1;
+        color: #fff;
       }
 
       .goto-contato {
         color: white;
-        border-radius: 4px;
         font-family: 'Montserrat';
-        border: 1px dashed #fff; 
+        font-size: 1.4vw;
       }
 
       .pricing {
-        font-size: 30px;
+        font-size: 3vw;
         margin: 0;
         padding: 0;
-        
       } 
 
       #boldpink {
         color: #ff00b1;
       }
+
+      @media screen and (max-width: 700px) { 
+        .grid-container {
+          margin: 20px auto;
+          display: grid;
+          grid-template-columns: 30vw 30vw 30vw;
+          grid-template-rows: auto auto auto;
+          gap: 10px;
+          width: 60vw;
+          /* height: 450px; */
+        }
+        .left {
+          grid-column: 1/ span 2;
+          grid-row: 1;
+        }
+        .right {
+          grid-column: 1/ span 2;
+          grid-row: 2;
+        }
+      }
+
     </style>
   </head>
   <body>
@@ -96,29 +135,31 @@
       </nav>
       
       <br><br><br><br>
-      <div class="grid-container">
-        <div class="left">
-          <br><br><br><br><br><br><br><br>
-          <p class="pricing"><b id="boldpink">R$</b> 360,55 por mês</p>
-          <br><br><br><br><br><br><br><br>
-            <h2 class="text-title">Contato ao provedor</h2>
+      <div class="wrapper">
+        <div class="grid-container">
+          <div class="left">
+            <br><br><br><br><br><br><br><br>
+            <p class="pricing"><b id="boldpink">R$</b> 360,55 p/mês</p>
+            <br><br><br><br><br><br><br><br>
+              <h2 class="text-title">Contato ao provedor</h2>
+                <br><br>
+              <div class="main-text">
+                <button class="btn-goto-contato"><a class="goto-contato" href="contato.html">Contate-nos sobre sua escolha</a></button>
+              </div>
+          </div>
+          
+          <div class="right">
+            <br><br><br><br><br><br><br><br>
+            <p class="pricing"><b id="boldpink">R$</b> SUA ESCOLHA</p>
+            <br><br><br><br><br><br><br><br>
+              <h2 class="text-title">Contato ao provedor</h2>
               <br><br>
-            <div class="main-text">
-              <a class="goto-contato" href="contato.html">Contate-nos sobre sua escolha</a>
-            </div>
-        </div>
-        
-        <div class="right">
-          <br><br><br><br><br><br><br><br>
-          <p class="pricing"><b id="boldpink">R$</b> SUA ESCOLHA</p>
-          <br><br><br><br><br><br><br><br>
-            <h2 class="text-title">Conectado ao provedor</h2>
-            <br><br>
-            <div class="main-text">
-               <a class="goto-contato" href="contato.html">Contate-nos sobre seu preço</a>
-            </div>
-        </div>
-      </div>    
+              <div class="main-text">
+                <button class="btn-goto-contato"><a class="goto-contato" href="contato.html">Contate-nos sobre seu preço</a></button>
+              </div>
+          </div>
+        </div>   
+      </div> 
 
       <script type="text/javascript">
         const toggleMenuOpen = () => document.body.classList.toggle("open");
